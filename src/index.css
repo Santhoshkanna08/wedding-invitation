@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-tamil-serif: 'Noto Serif Tamil', 'Tiro Tamil', Georgia, serif;
+    --font-tamil-sans: 'Anek Tamil', 'Noto Sans Tamil', -apple-system, sans-serif;
+    --font-display: 'Cinzel', 'Cormorant Garamond', serif;
+  }
+}
+
+.font-tamil-serif {
+  font-family: var(--font-tamil-serif);
+}
+
+.font-tamil-sans {
+  font-family: var(--font-tamil-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-serif-eng {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+@keyframes gentleSwayLeft {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0px) scale(1);
+  }
+  50% {
+    transform: rotate(-1.5deg) translateY(-4px) scale(1.01);
+  }
+}
+
+@keyframes gentleSwayRight {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0px) scale(1);
+  }
+  50% {
+    transform: rotate(1.8deg) translateY(-5px) scale(1.01);
+  }
+}
+
+@keyframes lampFlame {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.7));
+  }
+  50% {
+    transform: scale(1.08) rotate(1.5deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.9));
+  }
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes sunbeamPulse {
+  0%, 100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.animate-sway-left {
+  animation: gentleSwayLeft 6s ease-in-out infinite;
+  transform-origin: top left;
+}
+
+.animate-sway-right {
+  animation: gentleSwayRight 7s ease-in-out infinite;
+  transform-origin: top right;
+}
+
+.animate-lamp-flame {
+  animation: lampFlame 2.5s ease-in-out infinite;
+}
+
+.animate-subtle-float {
+  animation: subtleFloat 4s ease-in-out infinite;
+}
+
+.animate-sunbeam {
+  animation: sunbeamPulse 8s ease-in-out infinite;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fbf8f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 9999px;
+}
+

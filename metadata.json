@@ -1,0 +1,6 @@
+{
+  "name": "Balaji & Swetha Wedding Invitation",
+  "description": "Traditional Tamil Hindu wedding invitation for Balaji & Swetha featuring temple garden aesthetics, muhurtham details, event timeline, countdown, and blessings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
