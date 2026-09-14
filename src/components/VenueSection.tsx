@@ -18,7 +18,7 @@ export const VenueSection: React.FC = () => {
   return (
     <section
       id="venue"
-      className="relative pt-20 pb-28 sm:pt-24 sm:pb-24 px-4 sm:px-6 bg-[#faf7f2] overflow-hidden scroll-mt-6 sm:scroll-mt-8"
+      className="relative pt-20 pb-36 sm:pt-24 sm:pb-24 px-4 sm:px-6 bg-[#faf7f2] overflow-hidden scroll-mt-6 sm:scroll-mt-8"
     >
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.div

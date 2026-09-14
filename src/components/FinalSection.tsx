@@ -18,7 +18,7 @@ export const FinalSection: React.FC = () => {
   };
 
   return (
-    <footer className="relative min-h-[90vh] w-full flex flex-col justify-between items-center overflow-hidden bg-[#faf7f2] select-none pt-16 pb-32 sm:pb-20 text-center">
+    <footer className="relative min-h-[90vh] w-full flex flex-col justify-between items-center overflow-hidden bg-[#faf7f2] select-none pt-16 pb-40 sm:pb-20 text-center">
       {/* Background Temple & Flora ambiance from the hero visual language */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-30">
         <img

@@ -54,6 +54,9 @@ export default function App() {
 
         {/* Final Floral Composition & WhatsApp Share */}
         <FinalSection />
+
+        {/* Mobile bottom navbar clearance spacer */}
+        <div className="md:hidden h-20" aria-hidden="true" />
       </main>
     </div>
   );
