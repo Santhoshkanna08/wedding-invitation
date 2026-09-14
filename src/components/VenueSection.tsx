@@ -72,7 +72,7 @@ export const VenueSection: React.FC = () => {
           </div>
 
           {/* Bottom Address Details & Directions Buttons */}
-          <div className="p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 bg-[#fffcf7]">
+          <div className="p-6 sm:p-8 pb-10 sm:pb-8 flex flex-col md:flex-row md:items-center justify-between gap-6 bg-[#fffcf7]">
             <div className="flex-1 space-y-2">
               <div className="flex items-center gap-2 text-[#854d0e] text-xs font-semibold uppercase tracking-wider font-serif-eng">
                 <MapPin className="w-4 h-4 text-[#b45309]" />
@@ -90,13 +90,13 @@ export const VenueSection: React.FC = () => {
             </div>
 
             {/* Actions: "வழியை காண" (Directions) & Copy */}
-            <div className="flex flex-col sm:flex-row md:flex-col gap-3 shrink-0">
+            <div className="flex flex-col sm:flex-row md:flex-col gap-3 shrink-0 w-full sm:w-auto">
               <a
                 id="venue-directions-btn"
                 href={WEDDING_DATA.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-gradient-to-r from-[#2e5927] to-[#1c3f18] text-[#fef9c3] font-tamil-serif font-semibold text-sm sm:text-base shadow-md hover:shadow-lg hover:scale-102 active:scale-98 transition-all border border-[#d4af37]/50"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-gradient-to-r from-[#2e5927] to-[#1c3f18] text-[#fef9c3] font-tamil-serif font-semibold text-sm sm:text-base shadow-md hover:shadow-lg active:scale-98 transition-all border border-[#d4af37]/50"
               >
                 <Navigation className="w-4 h-4 text-[#fde047]" />
                 <span>வழியை காண (View Route)</span>
@@ -106,7 +106,7 @@ export const VenueSection: React.FC = () => {
               <button
                 id="venue-copy-address-btn"
                 onClick={handleCopyAddress}
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#f6eee0] hover:bg-[#ede2d0] text-[#713f12] text-xs sm:text-sm font-semibold transition-all border border-[#dec9ab]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#f6eee0] hover:bg-[#ede2d0] text-[#713f12] text-xs sm:text-sm font-semibold transition-all border border-[#dec9ab] cursor-pointer"
               >
                 {copied ? (
                   <>

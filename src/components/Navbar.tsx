@@ -65,10 +65,10 @@ export const Navbar: React.FC = () => {
 
       {/* 
         MOBILE FLOATING BOTTOM DOCK
-        Optimized for WhatsApp mobile viewers
+        Optimized for WhatsApp mobile viewers & all mobile screen widths
       */}
-      <div className="md:hidden fixed bottom-3 inset-x-0 z-40 flex justify-center px-3 pointer-events-none">
-        <nav className="pointer-events-auto flex items-center justify-around gap-1 w-full max-w-sm px-2 py-1.5 rounded-full bg-[#fffefc]/95 border border-[#d4af37]/50 shadow-xl backdrop-blur-lg">
+      <div className="md:hidden fixed bottom-2.5 inset-x-0 z-40 flex justify-center px-2 pointer-events-none">
+        <nav className="pointer-events-auto flex items-center justify-between w-full max-w-sm px-1.5 py-1 rounded-full bg-[#fffefc]/95 border border-[#d4af37]/50 shadow-xl backdrop-blur-lg">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;
             const IconComp = item.icon;
@@ -77,14 +77,16 @@ export const Navbar: React.FC = () => {
                 key={item.id}
                 id={`mobile-nav-btn-${item.id}`}
                 onClick={() => scrollToSection(item.id)}
-                className={`flex flex-col items-center justify-center py-1 px-2.5 rounded-full text-[11px] font-tamil-serif transition-all duration-200 ${
+                className={`flex-1 min-w-0 flex flex-col items-center justify-center py-1 px-1 rounded-full text-center transition-all duration-200 cursor-pointer ${
                   isActive
                     ? 'bg-[#2b5927] text-[#fef9c3] font-bold shadow-xs'
                     : 'text-[#6e5844] hover:text-[#2b5927]'
                 }`}
               >
-                <IconComp className={`w-4 h-4 ${isActive ? 'text-[#fde047]' : 'text-[#854d0e]'}`} />
-                <span className="text-[10px] leading-tight mt-0.5">{item.labelTa}</span>
+                <IconComp className={`w-3.5 h-3.5 ${isActive ? 'text-[#fde047]' : 'text-[#854d0e]'}`} />
+                <span className="text-[9px] xs:text-[10px] leading-tight mt-0.5 whitespace-nowrap truncate w-full text-center">
+                  {item.labelTa}
+                </span>
               </button>
             );
           })}
