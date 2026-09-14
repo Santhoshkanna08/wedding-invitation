@@ -61,13 +61,13 @@ export const CoupleSection: React.FC = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.2 }}
-          className="mt-6 mb-10 flex items-center justify-center gap-3 sm:gap-6 font-tamil-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#234520]"
+          className="mt-6 mb-10 w-full max-w-full px-2 flex flex-wrap items-center justify-center gap-2 sm:gap-4 font-tamil-serif text-2xl xs:text-3xl sm:text-4xl font-bold text-[#234520] text-center"
         >
-          <span className="tracking-wide">{WEDDING_DATA.groom.nameTa}</span>
-          <span className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#fae8e8] text-[#dc2626] shadow-inner border border-[#fecaca] animate-pulse">
-            <Heart className="w-5 h-5 sm:w-6 sm:h-6 fill-[#dc2626]" />
+          <span className="tracking-wide whitespace-nowrap">{WEDDING_DATA.groom.nameTa}</span>
+          <span className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-[#fae8e8] text-[#dc2626] shadow-inner border border-[#fecaca] animate-pulse shrink-0 mx-0.5">
+            <Heart className="w-4 h-4 sm:w-5 sm:h-5 fill-[#dc2626]" />
           </span>
-          <span className="tracking-wide">{WEDDING_DATA.bride.nameTa}</span>
+          <span className="tracking-wide whitespace-nowrap">{WEDDING_DATA.bride.nameTa}</span>
         </motion.div>
 
         {/* Traditional Ornamental Frame for Couple Portrait */}

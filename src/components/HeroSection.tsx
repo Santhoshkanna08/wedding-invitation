@@ -220,12 +220,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenInvitation }) =>
           className="my-3 sm:my-5 flex flex-col items-center"
         >
           {/* Tamil Names Display */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 font-tamil-serif font-bold text-3xl sm:text-4xl md:text-5xl text-[#2b4c2b] tracking-wide drop-shadow-xs">
-            <span className="hover:text-[#1b381b] transition-colors">பாலாஜி</span>
-            <span className="text-xl sm:text-2xl md:text-3xl text-[#b45309] font-serif font-normal italic px-1">
+          <div className="w-full max-w-full px-2 flex flex-wrap items-center justify-center gap-2 sm:gap-4 font-tamil-serif font-bold text-2xl xs:text-3xl sm:text-4xl md:text-5xl text-[#2b4c2b] tracking-wide drop-shadow-xs text-center">
+            <span className="hover:text-[#1b381b] transition-colors whitespace-nowrap">பாலாஜி</span>
+            <span className="text-lg sm:text-2xl md:text-3xl text-[#b45309] font-serif font-normal italic px-1 shrink-0">
               &amp;
             </span>
-            <span className="hover:text-[#1b381b] transition-colors">ஸ்வேதா</span>
+            <span className="hover:text-[#1b381b] transition-colors whitespace-nowrap">ஸ்வேதா</span>
           </div>
 
           {/* English Sub-line */}

@@ -51,11 +51,11 @@ export const FinalSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex items-center justify-center gap-3 sm:gap-4 font-tamil-serif font-bold text-3xl sm:text-4xl text-[#234520]"
+          className="w-full max-w-full px-2 flex flex-wrap items-center justify-center gap-2 sm:gap-3 font-tamil-serif font-bold text-2xl xs:text-3xl sm:text-4xl text-[#234520] tracking-wide text-center"
         >
-          <span>{WEDDING_DATA.groom.nameTa}</span>
-          <Heart className="w-6 h-6 text-[#dc2626] fill-[#dc2626] animate-pulse" />
-          <span>{WEDDING_DATA.bride.nameTa}</span>
+          <span className="whitespace-nowrap">{WEDDING_DATA.groom.nameTa}</span>
+          <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-[#dc2626] fill-[#dc2626] animate-pulse shrink-0 mx-0.5" />
+          <span className="whitespace-nowrap">{WEDDING_DATA.bride.nameTa}</span>
         </motion.div>
 
         <p className="mt-1 font-display tracking-[0.2em] text-[#854d0e] uppercase text-xs sm:text-sm font-semibold">
